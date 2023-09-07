@@ -1,0 +1,84 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/object1694080891.json",
+	"title": "Root",
+	"type": "array",
+	"default": [],
+	"items":{
+		"$id": "#root/items",
+		"title": "Items",
+		"type": "object",
+		"required": [
+			"id",
+			"currency_code",
+			"email",
+			"name",
+			"surname",
+			"username"
+		],
+		"properties": {
+			"id": {
+				"$id": "#root/items/id",
+				"title": "Id",
+				"type": "string",
+				"default": "",
+				"examples": [
+					"64f88acb15ea3d2a62aaf2bf"
+				],
+				"pattern": "^.*$"
+			},
+			"currency_code": {
+				"$id": "#root/items/currency_code",
+				"title": "Currency_code",
+				"type": "string",
+				"default": "",
+				"examples": [
+					"1"
+				],
+				"pattern": "^.*$"
+			},
+			"email": {
+				"$id": "#root/items/email",
+				"title": "Email",
+				"type": "string",
+				"default": "",
+				"examples": [
+					"2"
+				],
+				"pattern": "^.*$"
+			},
+			"name": {
+				"$id": "#root/items/name",
+				"title": "Name",
+				"type": "string",
+				"default": "",
+				"examples": [
+					"3"
+				],
+				"pattern": "^.*$"
+			},
+			"surname": {
+				"$id": "#root/items/surname",
+				"title": "Surname",
+				"type": "string",
+				"default": "",
+				"examples": [
+					"6"
+				],
+				"pattern": "^.*$"
+			},
+			"username": {
+				"$id": "#root/items/username",
+				"title": "Username",
+				"type": "string",
+				"default": "",
+				"examples": [
+					"7"
+				],
+				"pattern": "^.*$"
+			}
+		}
+	}
+
+}
