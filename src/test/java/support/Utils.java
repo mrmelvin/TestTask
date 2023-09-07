@@ -1,10 +1,6 @@
 package support;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.restassured.response.Response;
-import support.models.Player;
-
-import java.io.FileNotFoundException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -55,7 +51,4 @@ public class Utils {
 				.then().extract().response();
 	}
 
-	public static void main(String[] args) {
-		deletePlayer("64f6e3ee15ea3d2a62aab8a8");
-	}
 }

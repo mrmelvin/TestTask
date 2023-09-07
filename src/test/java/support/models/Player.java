@@ -1,6 +1,6 @@
 package support.models;
 import com.github.javafaker.Faker;
-import lombok.Data;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -27,11 +27,6 @@ public class Player {
 		this.username = faker.name().username();
 	}
 
-	@Override
-	public String toString() {
-		return this.currencyCode + "\n" + this.email + "\n" + this.name + "\n" + this.password + "\n" + this.surname + "\n" + this.username;
-	}
-
 	public Map toMap() {
 		return Map.of(
 				"currency_code", this.currencyCode,
@@ -42,10 +37,5 @@ public class Player {
 				"surname", this.surname,
 				"username", this.username
 		);
-	}
-
-	public static void main(String[] args) {
-		Player player = new Player();
-		System.out.println(player.toMap());
 	}
 }
